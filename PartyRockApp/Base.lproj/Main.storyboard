@@ -89,7 +89,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="jCU-bs-x2N"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -153,14 +153,30 @@
                                     <constraint firstAttribute="height" constant="250" id="OyP-oc-RLg"/>
                                 </constraints>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQx-Sa-3c5">
+                                <rect key="frame" x="164.5" y="311" width="46" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="n4P-12-sbv"/>
+                                    <constraint firstAttribute="height" constant="44" id="pJ9-33-6ra"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="jPm-KF-9VL" eventType="touchUpInside" id="OQ8-RF-uZc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83878205128205119" green="0.83878205128205119" blue="0.83878205128205119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="LW9-Sa-Bzi" firstAttribute="top" secondItem="VqL-CR-gRZ" secondAttribute="top" id="KuC-uf-NQh"/>
+                            <constraint firstItem="NQx-Sa-3c5" firstAttribute="centerY" secondItem="VqL-CR-gRZ" secondAttribute="centerY" id="Ncw-bC-lgv"/>
+                            <constraint firstItem="NQx-Sa-3c5" firstAttribute="centerX" secondItem="VqL-CR-gRZ" secondAttribute="centerX" id="Uqe-Vx-dXF"/>
                             <constraint firstItem="LW9-Sa-Bzi" firstAttribute="leading" secondItem="VqL-CR-gRZ" secondAttribute="leading" id="X2c-c5-Yr2"/>
                             <constraint firstAttribute="trailing" secondItem="LW9-Sa-Bzi" secondAttribute="trailing" id="yRU-Eg-G2j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="videoWebView" destination="LW9-Sa-Bzi" id="TaS-pX-0b5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jV6-YP-Q9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
